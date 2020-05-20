@@ -1,7 +1,5 @@
 # Documentação geral do projeto
 
-**Índice**
-
 * [Padrão para mensagens dos commits](commits.md)
 * [Arquitetura](arquitetura.md)
 * [Backend](../lpweb20201_estagio_tcc_back/docs/readme.md)
