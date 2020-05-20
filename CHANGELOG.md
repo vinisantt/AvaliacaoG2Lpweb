@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.3...v0.0.4) (2020-05-20)
+
+
+### Documentação
+
+* **backend:** atualiza o índice da documentação ([c6ca14f](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/c6ca14f5d957a5ea43056f6aac5aa74524d4be7f))
+* **frontend:** adiciona documentação da página não encontrada ([8b5ba9f](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/8b5ba9f776c8f16cabc80affcf65a98bbcbe52bb))
+* **frontend:** adiciona documentação da tela sobre ([5616421](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/5616421d2867464958caa1face4818f3c14ab0a3))
+* **frontend:** adiciona documentação das rotas ([fe923d8](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/fe923d875f0bc8fdc07201d820f9515769ae0ae5))
+* **frontend:** adiciona documentação do componente app ([d7a422a](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/d7a422a5c3246f752e4ce2d600c0cb088382371e))
+* **frontend:** adiciona documentação do perfil ([896cb95](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/896cb957c45eaae2e7aa29a4bb0ac64a7612687e))
+* **frontend:** adiciona ilustrações do app e login ([ccde427](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/ccde427380bacc28a904ab5bc3aedde496599649))
+* **frontend:** atualiza documentação da arquitetura ([c135402](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/c1354023cba62672b79c44c8e2ddf138e3d719d7))
+* **frontend:** atualiza documentação do login ([84e02b6](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/84e02b601c78dc7e25a990fc9867110200200a9f))
+* **frontend:** atualiza índice da documentação ([66263c9](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/66263c95222d9d0314c6cd08f3c38827b0320eee))
+* atualiza o índice da documentação geral ([03eec2b](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/03eec2b325b8c9e2d277783506dc89f6b0868851))
+* atualiza o índice da documentação geral ([f5a8e0a](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/f5a8e0aa3dc3d2d053bf6571805e4eee42b25cea))
+
 ### [0.0.3](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.2...v0.0.3) (2020-05-19)
 
 
