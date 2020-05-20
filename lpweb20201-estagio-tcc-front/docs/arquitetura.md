@@ -8,11 +8,11 @@ A interação com o backend se dá por meio de requisições HTTP. No topo da ar
 
 Há também os componentes, que fornecem a interface gráfica:
 
-* `AppComponent`: o component raiz, que funciona como *shell*
+* [`AppComponent`](app.md): o component raiz, que funciona como *shell*
 * [`LoginComponent`](login.md): apresenta a tela de login
-* `SobreComponent`: apresenta a tela sobre
-* `PerfilComponent`: apresenta a tela perfil
-* `PaginaNaoEncontradaComponent`: apresenta a tela de página não encontrada
+* [`SobreComponent`](sobre.md): apresenta a tela sobre
+* [`PerfilComponent`](perfil.md): apresenta a tela perfil
+* [`PaginaNaoEncontradaComponent`](pagina-nao-encontrada.md): apresenta a tela de página não encontrada
 
 Outro elemento importante desta arquitetura são os serviços, que contêm a lógica de negócio, são utilizados pelos componentes por meio do processo de **Injeção de Dependência** e, na prática, interagem diretamente com o backend por meio do serviço `HttpClient` disponível no módulo `HttpClientModule`:
 
