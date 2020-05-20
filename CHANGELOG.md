@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.4...v0.0.5) (2020-05-20)
+
+
+### Documentação
+
+* **backend:** adiciona documentação das URLs ([99a5e16](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/99a5e16aa742817e3992a4a2cc6438928e174d90))
+* **backend:** adiciona documentação das views ([a265c3d](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/a265c3d17c88168821f73c6ee80bf3590136a61b))
+* **backend:** adiciona documentação dos models ([7493d9c](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/7493d9c22cbdb87c504bb4e169fd1a59fa8be6b9))
+* **backend:** adiciona documentação dos serializers ([f11b867](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/f11b867461d65680c07ad72d52c072b8bb8002b0))
+* **backend:** atualiza índice da documentação ([c1037d4](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/c1037d46b45707644b15ebd5c0fbeafeede10568))
+* **frontend:** atualiza descrição do login ([997e0cf](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/997e0cf6f8b484cc6000db4e77ae9aabb42c1261))
+* **frontend:** atualiza descrição do perfil ([5e89030](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/5e890304403d0a7d8a4da5e285fd2c8994bc5570))
+
 ### [0.0.4](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.3...v0.0.4) (2020-05-20)
 
 
