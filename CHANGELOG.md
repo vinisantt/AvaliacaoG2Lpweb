@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.6...v0.0.7) (2020-06-05)
+
+
+### Funcionalidades
+
+* **backend:** altera views para retornar propostas do usuário que é colaborador (membro) externo ([643a189](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/643a18905705456e4cdfb40281e0d999c4b39fe0))
+
 ### [0.0.6](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.5...v0.0.6) (2020-06-05)
 
 
