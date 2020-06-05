@@ -14,4 +14,5 @@ export class UserService {
   list() {
     return this.http.get(environment.API_URL.concat('users/'), this.auth$.httpOptions());
   }
+
 }

@@ -46,6 +46,23 @@ export class AuthService {
 
   logout() {
     localStorage.removeItem('user');
+    localStorage.removeItem('user-detail');
+  }
+
+  getDetalhesDoUsuarioLogado() {
+    return this.http.get(environment.API_URL.concat('usuario-logado/'), this.httpOptions())
+      .pipe(
+        tap(user => localStorage.setItem('user-detail', JSON.stringify(user)))
+      );
+  }
+
+  usuarioDetalhes() {
+    const data = localStorage.getItem('user-detail');
+    if (data) {
+      return JSON.parse(data);
+    } else {
+      return null;
+    }
   }
 
   httpOptions() {
