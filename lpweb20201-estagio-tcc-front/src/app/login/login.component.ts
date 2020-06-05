@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { AuthService } from '../auth.service';
 import { UserService } from '../user.service';
+import { delay, concatMap } from 'rxjs/operators';
+import { forkJoin, zip } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -24,6 +26,31 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    /*
+    this.auth$.login(this.username, this.password)
+      .subscribe(user => {
+        this.auth$.getDetalhesDoUsuarioLogado()
+          .subscribe(
+            () => this.router.navigate(['/perfil'])
+          );
+      });
+    */
+    this.auth$.login(this.username, this.password)
+      .pipe(
+        delay(1000),
+        concatMap(() => this.auth$.getDetalhesDoUsuarioLogado())
+      ).subscribe(
+        () => this.router.navigate(['/perfil']),
+        err => this.error = err.error
+      );
+    /*
+    zip(
+      this.auth$.login(this.username, this.password),
+      delay(1000),
+      this.auth$.getDetalhesDoUsuarioLogado()
+    ).subscribe(dados => console.log(dados), error => console.error(error));
+    */
+    /*
     this.auth$.login(this.username, this.password)
       .subscribe(
         user => {
@@ -31,6 +58,7 @@ export class LoginComponent implements OnInit {
         },
         err => this.error = err.error
       );
+      */
   }
 
   refreshToken() {
