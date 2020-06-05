@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.5...v0.0.6) (2020-06-05)
+
+
+### Refatoração
+
+* **backend:** atualiza configurações do backend ([bd77353](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/bd773538358007fa95dca26718642d271fcb7aa9))
+
+
+### Documentação
+
+* **backend:** atualiza documentação do backend ([8003853](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/8003853173fd98df16cc52ec1f969af4e676bda9))
+* **backend:** atualiza o readme do backend ([5c5292b](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/5c5292baea2c49b1b8322e016163262936674f98))
+
+
+### Funcionalidades
+
+* **backend:** adiciona classe de paginação customizada ([59de582](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/59de5821e0a73769277aacb9113ffb4be01b5e34))
+* **backend:** adiciona dependência do django-filter ([fb3dc89](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/fb3dc89d3f0006c2dc5f2f48e6d3e2ca1fed6809))
+* **backend:** adiciona e atualiza URLs ([29fe117](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/29fe11797071ca3b22006cd68a4319429bf435c8))
+* **backend:** adiciona migrations ([722ff3c](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/722ff3cf5e4cd2c653f88aee6429201f32884a8a))
+* **backend:** adiciona models ([f414a8d](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/f414a8d1c5102e17b8b3178dc9dd48572ed8e322))
+* **backend:** adiciona permissões customizadas ([2067224](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/2067224bb3ba665269f83a98655fa80601216d4d))
+* **backend:** adiciona serializers ([06e61ab](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/06e61ab30037648c58b29f7dacbe6e29a831a359))
+* **backend:** adiciona views ([9fa7725](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/9fa772562667d9791c91d4c1ff921140190af930))
+* **backend:** configura o django-admin ([9683a0f](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/9683a0f7dd485299540f626579043b6a6894d969))
+* **frontend:** adiciona componente HomeInicio ([eb6021a](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/eb6021a0b307e0a3bffe774e275deaaeb1142d53))
+* **frontend:** adiciona componente Inicio ([fd669a1](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/fd669a103261f7945580b90d27a2eb143fdf932e))
+* **frontend:** adiciona componente Inicio ([c60e6c6](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/c60e6c6de767a7ff50ba4899b71b5b7c6b43138e))
+* **frontend:** adiciona componentes para propostas de TCC ([5738e11](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/5738e113ae1a10553595d86f324178d446eb0a39))
+* **frontend:** adicione a atualiza serviços ([d01d52e](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/d01d52e7835c243e93e77d0445904acfea2db603))
+* **frontend:** atualiza as rotas ([f4bedcf](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/f4bedcf00419b75d3b0f25a8b9e797c25cf4af59))
+* **frontend:** atualiza componente Login ([6bb1c09](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/6bb1c096d2b46a108884ba4934515b10dbb0c91c))
+* **frontend:** atualiza definições do módulo ([30b9360](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/30b93604941c032714a3b6f60760b42786e89305))
+
 ### [0.0.5](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.4...v0.0.5) (2020-05-20)
 
 

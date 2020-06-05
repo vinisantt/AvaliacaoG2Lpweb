@@ -1,6 +1,6 @@
 {
   "name": "lpweb20201-estagio-tcc",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Software de gerenciamento e avaliação de propostas de Estágio e TCC",
   "main": "index.js",
   "scripts": {
