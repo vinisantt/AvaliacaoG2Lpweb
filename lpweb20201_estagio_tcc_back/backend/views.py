@@ -165,8 +165,10 @@ class PropostaDeEstagioViewSet(viewsets.ModelViewSet):
             funcionario = Funcionario.objects.filter(usuario__usuario=self.request.user)
             if funcionario.exists():
                 return PropostaDeEstagio.objects.filter(membros_da_banca__membro_interno__in=[funcionario.first()])
-            else:
-                raise PermissionDenied()
+            # obtem o colaborador externo referente ao usuario
+            colaborador = ColaboradorExterno.objects.filter(usuario__usuario=self.request.user)
+            if colaborador.exists():
+                return PropostaDeEstagio.objects.filter(membros_da_banca__membro_externo__in=[colaborador.first()])
         # se o usuário é aluno, então retorna apenas as orientações dele
         return PropostaDeEstagio.objects.filter(orientacao__aluno__usuario__usuario=self.request.user)
 
@@ -191,8 +193,10 @@ class PropostaDeTCCViewSet(viewsets.ModelViewSet):
             funcionario = Funcionario.objects.filter(usuario__usuario=self.request.user)
             if funcionario.exists():
                 return PropostaDeTCC.objects.filter(membros_da_banca__membro_interno__in=[funcionario.first()])
-            else:
-                raise PermissionDenied()
+            # obtem o colaborador externo referente ao usuario
+            colaborador = ColaboradorExterno.objects.filter(usuario__usuario=self.request.user)
+            if colaborador.exists():
+                return PropostaDeEstagio.objects.filter(membros_da_banca__membro_externo__in=[colaborador.first()])
         # se o usuário é aluno, então retorna apenas as orientações dele
         return PropostaDeTCC.objects.filter(orientacao__aluno__usuario__usuario=self.request.user)
 
