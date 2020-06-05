@@ -23,7 +23,18 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register('perfil-logado', views.PerfilLogadoViewSet, basename='perfil-logado')
+router.register('usuario-logado', views.UsuarioLogadoDetailsViewSet, basename='usuario-logado')
 router.register('perfis', views.PerfilViewSet, basename='perfis')
+router.register('cursos', views.CursoViewSet)
+router.register('alunos', views.AlunoViewSet)
+router.register('matriculas', views.MatriculaViewSet, basename='matriculas')
+router.register('funcionarios', views.FuncionarioViewSet)
+router.register('professores', views.ProfessorViewSet)
+router.register('orientacoes', views.OrientacaoViewSet, basename='orientacoes')
+router.register('propostas-de-estagio', views.PropostaDeEstagioViewSet, basename='propostas-de-estagio')
+router.register('propostas-de-tcc', views.PropostaDeTCCViewSet, basename='propostas-de-tcc')
+router.register('avaliacoes-de-propostas', views.AvaliacaoDePropostaViewSet, basename='avaliacoes-de-propostas')
+router.register('colaboradores-externos', views.ColaboradorExternoViewSet, basename='colaboradores-externos')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
