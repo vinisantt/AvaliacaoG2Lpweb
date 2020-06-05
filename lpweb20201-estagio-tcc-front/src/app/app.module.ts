@@ -12,6 +12,10 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { LoginComponent } from './login/login.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { HomeInicioComponent } from './home-inicio/home-inicio.component';
+import { PropostaDeTCCComponent } from './proposta-de-tcc/proposta-de-tcc.component';
+import { PropostasDeTCCComponent } from './propostas-de-tcc/propostas-de-tcc.component';
 
 registerLocaleData(localePt, 'pt', localePtExtra);
 
@@ -22,7 +26,11 @@ registerLocaleData(localePt, 'pt', localePtExtra);
     PerfilComponent,
     LoginComponent,
     SobreComponent,
-    PaginaNaoEncontradaComponent
+    PaginaNaoEncontradaComponent,
+    InicioComponent,
+    HomeInicioComponent,
+    PropostaDeTCCComponent,
+    PropostasDeTCCComponent
   ],
   imports: [
     BrowserModule,
