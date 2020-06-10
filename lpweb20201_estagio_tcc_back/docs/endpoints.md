@@ -25,6 +25,7 @@
 - [Propostas de TCC](#propostas-de-tcc)
   - [`POST /api/propostas-de-tcc/`](#post-apipropostas-de-tcc)
 - [Avaliações de propostas](#avaliações-de-propostas)
+  - [`POST /api/avaliacoes-de-propostas/`](#post-apiavaliacoes-de-propostas)
 - [Colaboradores externos](#colaboradores-externos)
 
 Este documento descreve os endpoints da API, agrupados por elementos principais da API.
@@ -961,6 +962,16 @@ Exemplo para `GET /api/avaliacoes-de-propostas/`:
     ]
 }
 ```
+
+### `POST /api/avaliacoes-de-propostas/`
+
+O cadastro de avaliações de propostas envolve o envio dos dados:
+
+- `proposta`: o identificador da proposta que está sendo avaliada
+- `usuario_id`: o identificador do usuário que está cadastrando a avaliação da proposta
+- `comentario`: o comentário/texto da avaliação
+- `aprovada`: indica se a proposta está aprovada (true) ou não (false)
+- `publicada`: indica se a avaliação está publicada (true) ou não (false)
 
 ## Colaboradores externos
 
