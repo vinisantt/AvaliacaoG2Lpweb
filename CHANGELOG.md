@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.7...v0.0.8) (2020-06-10)
+
+
+### Correções de bugs
+
+* **backend:** corrige serializador de proposta e documentação ([633526c](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/commit/633526c5c7c223e475f2710d43bc6fe7ef2f39ea))
+
 ### [0.0.7](https://github.com/jacksongomesbr/lpweb20201-estagio-tcc/compare/v0.0.6...v0.0.7) (2020-06-05)
 
 
