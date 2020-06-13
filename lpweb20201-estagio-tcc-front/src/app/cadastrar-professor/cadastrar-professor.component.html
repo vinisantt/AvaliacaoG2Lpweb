@@ -1,0 +1,106 @@
+<div class="container">
+  <h1>Cadastrar Professor</h1>
+  <hr />
+  <br />
+  <div
+    class="alert alert-success col-6"
+    role="alert"
+    *ngIf="erro.erro == false && erro.submitado"
+  >
+    Cadastro realizado com sucesso!<br />
+    Redirecionando para a lista de professores...
+  </div>
+
+  <div
+    class="alert alert-danger col-6"
+    role="alert"
+    *ngIf="erro.erro && erro.submitado"
+  >
+    <h4>Erro ao realizar cadastro !</h4>
+    <br />
+    <p class="required" *ngIf="erro.status == 500">
+      Já existe um registro com essas informações
+    </p>
+    <p class="required" *ngIf="erro.status == 0">
+      Impossível estabelecer conexão com o servidor, verifique sua internet !
+    </p>
+    <p>Código do erro: {{ erro.status }}</p>
+    <br />
+  </div>
+
+  <form #cadastroForm="ngForm" (submit)="salvar()">
+    <div class="form-group">
+      <label for="curso">Cursos<span class="required">*</span></label>
+      <select
+        [(ngModel)]="curso"
+        id="curso"
+        name="curso"
+        class="form-control col-6"
+        #cursoSelect="ngModel"
+        required
+        [class.is-invalid]="
+          cursoSelect.errors && (cursoSelect.dirty || cursoSelect.touched)
+        "
+      >
+        <option *ngFor="let c of cursos" [value]="c.id">{{ c.nome }}</option>
+      </select>
+      <span
+        class="text-danger"
+        *ngIf="cursoSelect?.errors?.required && cursoSelect.touched"
+        >É preciso selecionar um curso!
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label for="func">Funcionários<span class="required">*</span></label>
+      <select
+        [(ngModel)]="funcionario"
+        id="func"
+        name="func"
+        class="form-control col-6"
+        #funcionarioSelect="ngModel"
+        required
+        [class.is-invalid]="
+          funcionarioSelect.errors &&
+          (funcionarioSelect.dirty || funcionarioSelect.touched)
+        "
+      >
+        <option *ngFor="let f of funcionarios" [value]="f.id">{{
+          f.nome
+        }}</option>
+      </select>
+      <span
+        class="text-danger"
+        *ngIf="funcionarioSelect?.errors?.required && funcionarioSelect.touched"
+        >É preciso selecionar um funcionário!
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label for="fun">Funções<span class="required">*</span></label>
+      <select
+        [(ngModel)]="funcao"
+        id="fun"
+        name="fun"
+        class="form-control col-6"
+        #funcaoSelect="ngModel"
+        required
+        [class.is-invalid]="
+          funcaoSelect.errors && (funcaoSelect.dirty || funcaoSelect.touched)
+        "
+      >
+        <option *ngFor="let f of funcoes" [value]="f.func">{{ f.string }}</option>
+      </select>
+      <span
+        class="text-danger"
+        *ngIf="funcaoSelect?.errors?.required && funcaoSelect.touched"
+        >É preciso selecionar uma função!
+      </span>
+    </div>
+    <br />
+
+    <button [disabled]="cadastroForm.invalid" class="btn btn-primary mr-3">
+      Cadastrar
+    </button>
+  </form>
+</div>

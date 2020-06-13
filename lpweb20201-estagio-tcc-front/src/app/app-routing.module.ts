@@ -1,3 +1,4 @@
+import { ProfessorComponent } from './professor/professor.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
@@ -8,25 +9,29 @@ import { InicioComponent } from './inicio/inicio.component';
 import { HomeInicioComponent } from './home-inicio/home-inicio.component';
 import { PropostasDeTCCComponent } from './propostas-de-tcc/propostas-de-tcc.component';
 import { PropostaDeTCCComponent } from './proposta-de-tcc/proposta-de-tcc.component';
-
+import { CadastrarProfessorComponent } from './cadastrar-professor/cadastrar-professor.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'perfil', component: PerfilComponent },
   { path: 'sobre', component: SobreComponent },
+  { path: 'professores', component: ProfessorComponent },
+  { path: 'professor-cadastrar', component: CadastrarProfessorComponent },
   {
-    path: 'inicio', component: InicioComponent, children: [
+    path: 'inicio',
+    component: InicioComponent,
+    children: [
       { path: 'propostas-de-tcc', component: PropostasDeTCCComponent },
       { path: 'propostas-de-tcc/:id', component: PropostaDeTCCComponent },
-      { path: '', component: HomeInicioComponent }
-    ]
+      { path: '', component: HomeInicioComponent },
+    ],
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: '**', component: PaginaNaoEncontradaComponent }
+  { path: '**', component: PaginaNaoEncontradaComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

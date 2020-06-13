@@ -1,0 +1,38 @@
+<div class="container">
+  <h2>Professores</h2>
+  <hr />
+  <br />
+
+  <div class="alert alert-danger" role="alert" *ngIf="erro.erro">
+    Oooops, ocorreu um erro ao deletar o registro de ID - {{ erro.id }}, tente
+    novamente !
+  </div>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome Funcionário</th>
+        <th>CGU</th>
+        <th>Nome Curso</th>
+        <th>Função</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let professor of professores">
+        <td>{{ professor.id }}</td>
+        <td>{{ professor.funcionario.nome }}</td>
+        <td>{{ professor.funcionario.cgu }}</td>
+        <td>{{ professor.curso.nome }}</td>
+        <td>{{ professor.funcao }}</td>
+        <td>
+          <button class="btn btn-danger btn-sm" (click)="excluir(professor.id)">
+            Excluir
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br />
