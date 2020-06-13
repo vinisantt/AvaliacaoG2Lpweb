@@ -15,7 +15,16 @@ export class ProfessorComponent implements OnInit {
 
   ngOnInit(): void {
     this.profService$.lista().subscribe((dados: any) => {
-      this.professores = dados.results;
+      for (let result of dados.results) {
+        if (result.funcao == 'coordenador-estagio-tcc') {
+          result.funcao = 'Coordenador de Estágio e TCC';
+        } else if (result.funcao == 'professor') {
+          result.funcao = 'Professor';
+        } else {
+          result.funcao = 'Coordenador';
+        }
+        this.professores.push(result);
+      }
     });
   }
 
